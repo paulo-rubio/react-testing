@@ -5,6 +5,8 @@ import pokemons from '../data';
 import App from '../App';
 import renderWithRouter from './renderWithRouter';
 
+const idPokemon = 'pokemon-name';
+
 describe('Testa o componente Pokedex', () => {
   test('se a pagina contem um h2 que contem o texto Encountered pokémons', () => {
     renderWithRouter(<App />);
@@ -27,7 +29,7 @@ describe('Testa o componente Pokedex', () => {
   });
   test('se é mostrado apenas um pokemon por vez', () => {
     renderWithRouter(<App />);
-    const pokemonsLength = screen.getAllByTestId('pokemon-name');
+    const pokemonsLength = screen.getAllByTestId(idPokemon);
     expect(pokemonsLength).toHaveLength(1);
   });
   test('se a Pokédex tem os botões de filtro', () => {
@@ -59,8 +61,8 @@ describe('Testa o componente Pokedex', () => {
 
     expect(buttonAll).toBeInTheDocument();
     userEvent.click(buttonAll);
-    expect(screen.getByTestId('pokemon-name')).toHaveTextContent(/Pikachu/i);
+    expect(screen.getByTestId(idPokemon)).toHaveTextContent(/Pikachu/i);
     userEvent.click(buttonNext);
-    expect(screen.getByTestId('pokemon-name')).toHaveTextContent(/Charmander/i);
+    expect(screen.getByTestId(idPokemon)).toHaveTextContent(/Charmander/i);
   });
 });
