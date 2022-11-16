@@ -3,7 +3,6 @@ import { screen, render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import App from '../App';
 import renderWithRouter from './renderWithRouter';
-// import { Pokedex } from '../pages';
 
 describe('Testa o componente About', () => {
   test('Testa se a pagina contem informações da pokedex', () => {

@@ -3,7 +3,6 @@ import { screen, render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
 import App from '../App';
-// import renderWithRouter from './renderWithRouter';
 
 describe('Testa os componentes do app.js', () => {
   test('Testa se o link home existe e deve te redirecionar a Home', () => {
