@@ -1,14 +1,15 @@
-# MySQL One For All
+# React-testing
 
 # Projeto
-Criação de Queries em SQL utilizando DDL, MDL e DQL.
+Criação de testes de React utilizando o jest
 
 # Tecnologias
 Para o desenvolvimento desse projeto foi utilizado:
 
-- SQL
+- Jest
+- React
 
 # Nesse projeto tive que desenvolver.
-- Normalização de tabelas;
-- Criar um banco de dados e inserir seus dados;
-- Criar querys de busca e filtragem de dados;
+- Desenvolver testes de uma aplicação React
+- Consumir API;
+
